@@ -199,3 +199,33 @@
 }
 
 /* Estilos del Footer*/
+
+
+/*Transformacion*/
+
+.articulo:hover{
+  /* transform: scale3d(); */
+  transform: scale(1.2);
+}
+
+/*Transicion Quienes Somos*/
+#trans_qs
+{
+  position:relative;
+  height:640px;
+  width:333px;
+  margin:0 auto;
+}
+
+#trans_qs img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#trans_qs img.qa_img1:hover {
+  opacity:0;
+}
