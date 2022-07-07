@@ -1,0 +1,139 @@
+@import "https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap";
+
+* {
+	font-family: "Didact Gothic", sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+.header-container {
+	color: #250f04ff;
+	width: 100%;
+	height: 150px;
+	background-image: url("../assets/head_backgrund.jpg");
+	background-size: cover;
+	display: grid;
+	grid-template-rows: 3fr 1fr;
+	grid-template-columns: 1fr 3fr 1fr 1fr;
+	gap: 5px;
+	position: sticky;
+	top: 0;
+}
+#header-left {
+	grid-row-start: 1;
+	grid-column-start: 1;
+	grid-row-end: 3;
+	grid-column-end: 2;
+}
+#header-titulo {
+	grid-row-start: 1;
+	grid-column-start: 2;
+	grid-row-end: 2;
+	grid-column-end: 4;
+}
+#header-right {
+	grid-row-start: 1;
+	grid-column-start: 4;
+	grid-row-end: 3;
+	grid-column-end: 5;
+}
+#header-menu {
+	grid-row-start: 2;
+	grid-column-start: 2;
+	grid-row-end: 3;
+	grid-column-end: 3;
+	nav {
+		ul {
+			li {
+				margin: 0px 10px;
+				display: inline;
+				a {
+					color: #250f04ff;
+					text-decoration: none;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+#header-social {
+	grid-row-start: 2;
+	grid-column-start: 3;
+	grid-row-end: 3;
+	grid-column-end: 4;
+	nav {
+		position: relative;
+		float: right;
+		ul {
+			li {
+				margin: 0px 8px;
+				display: inline;
+			}
+		}
+	}
+}
+.main-container {
+	background-color: #ecdcc8ff;
+	display: grid;
+	height: 100;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 3fr 1fr 1fr;
+	gap: 5px;
+	h2 {
+		padding: 5px;
+	}
+	section {
+		article {
+			padding: 10px;
+			background: #dcc2a1ff;
+			margin: 10px;
+		}
+	}
+}
+.footer-container {
+	color: azure;
+	width: 100%;
+	height: 70px;
+	background-color: #a87b52ff;
+	display: grid;
+	grid-template-rows: 3fr 1fr;
+	grid-template-columns: 1fr 4fr 1fr;
+	gap: 5px;
+	position: -webkit-sticky;
+}
+#footer-content {
+	a {
+		color: azure;
+		text-decoration: none;
+		font-size: 9pt;
+	}
+	table {
+		width: 100%;
+	}
+}
+.articulo {
+	&:hover {
+		transform: scale(1.2);
+		transition: all 2s;
+	}
+}
+.anima_qs {
+	width: 640px;
+	height: 333px;
+	background-image: url(../assets/quienes_somos.jpeg);
+	&:hover {
+		animation: changeBgImg 9s infinite;
+	}
+}
+
+@keyframes changeBgImg {
+	0% {
+		background-image: url(../assets/quienes_somos.jpeg);
+	}
+	33% {
+		background-image: url(../assets/quienes_somos_2.jpg);
+	}
+	66% {
+		background-image: url(../assets/quienes_somos_3.jpg);
+	}
+}

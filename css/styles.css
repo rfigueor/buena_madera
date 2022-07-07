@@ -1,36 +1,12 @@
-/* CSS HEX */
-/* --cafe-au-lait: #a87b52ff;
---tan: #d3b796ff;
---camel: #be9264ff;
---dark-sienna: #250f04ff;
---desert-sand: #e0c8adff;
---camel-2: #c09b75ff;
---camel-3: #c99758ff;
---camel-4: #cda576ff;
---camel-5: #be8c53ff;
---tan: #e2c6a2ff;
---camel: #c99758ff;
---tan-2: #dcc2a1ff;
---almond: #e7d4bbff;
---almond-2: #ecdcc8ff;
---copper: #a76e37ff;
---tan-3: #cfab84ff;
---bronze: #bb813cff;
---cafe-au-lait: #a87b52ff;
-*/
-
-@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
-
+@import "https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap";
 * {
   font-family: "Didact Gothic", sans-serif;
   margin: 0px;
   padding: 0px;
 }
 
-/* Estilos del Header */
-
 .header-container {
-  color: #250f04ff;
+  color: #250f04;
   width: 100%;
   height: 150px;
   background-image: url("../assets/head_backgrund.jpg");
@@ -39,7 +15,6 @@
   grid-template-rows: 3fr 1fr;
   grid-template-columns: 1fr 3fr 1fr 1fr;
   gap: 5px;
-
   position: sticky;
   top: 0;
 }
@@ -47,47 +22,36 @@
 #header-left {
   grid-row-start: 1;
   grid-column-start: 1;
-
   grid-row-end: 3;
   grid-column-end: 2;
-  /* border: solid 1px black; */
 }
 
 #header-titulo {
   grid-row-start: 1;
   grid-column-start: 2;
-
   grid-row-end: 2;
   grid-column-end: 4;
-
-  /* border: solid 1px black; */
 }
 
 #header-right {
   grid-row-start: 1;
   grid-column-start: 4;
-
   grid-row-end: 3;
   grid-column-end: 5;
-  /* border: solid 1px black; */
 }
 
 #header-menu {
   grid-row-start: 2;
   grid-column-start: 2;
-
   grid-row-end: 3;
   grid-column-end: 3;
-  /* border: solid 1px black; */
 }
-
 #header-menu nav ul li {
   margin: 0px 10px;
   display: inline;
 }
-
 #header-menu nav ul li a {
-  color: #250f04ff;
+  color: #250f04;
   text-decoration: none;
   font-weight: bold;
 }
@@ -95,119 +59,66 @@
 #header-social {
   grid-row-start: 2;
   grid-column-start: 3;
-
   grid-row-end: 3;
   grid-column-end: 4;
-  /* border: solid 1px black; */
 }
-
 #header-social nav {
   position: relative;
   float: right;
 }
-
 #header-social nav ul li {
   margin: 0px 8px;
   display: inline;
 }
 
-/* Estilos del Header */
-
-/* Estilos del Main */
 .main-container {
-  background-color: #ecdcc8ff;
+  background-color: #ecdcc8;
   display: grid;
   height: 100;
   grid-template-rows: auto;
   grid-template-columns: 1fr 3fr 1fr 1fr;
   gap: 5px;
 }
-
 .main-container h2 {
   padding: 5px;
 }
-
-.main-container section {
-}
-
 .main-container section article {
   padding: 10px;
-  background: #dcc2a1ff;
+  background: #dcc2a1;
   margin: 10px;
 }
-
-#main-left {
-  /* border: solid 1px black; */
-}
-
-#main-content {
-  /* border: solid 1px black; */
-}
-
-#main-sidebar {
-  /* border: solid 1px black; */
-}
-
-#main-right {
-  /* border: solid 1px black; */
-}
-/* Estilos del Main */
-
-/* Estilos del Footer*/
 
 .footer-container {
   color: azure;
   width: 100%;
   height: 70px;
-  background-color: #a87b52ff;
-
+  background-color: #a87b52;
   display: grid;
   grid-template-rows: 3fr 1fr;
-  /* grid-template-columns: 1fr 1fr 2fr 1fr 1fr; */
   grid-template-columns: 1fr 4fr 1fr;
   gap: 5px;
   position: -webkit-sticky;
 }
 
-#footer-left {
-  /* border: solid 1px black; */
-}
-
-#footer-content {
-  /* border: solid 1px black; */
-}
 #footer-content a {
   color: azure;
   text-decoration: none;
   font-size: 9pt;
 }
-
 #footer-content table {
   width: 100%;
 }
 
-#footer-right {
-  /* border: solid 1px black; */
-}
-
-/* Estilos del Footer*/
-
-/*Transformacion & Transicion (Index)*/
-
 .articulo:hover {
-  /* transform: scale3d(); */
   transform: scale(1.2);
   transition: all 2s;
 }
-
-/*Animacion (Quienes somos)*/
 
 .anima_qs {
   width: 640px;
   height: 333px;
   background-image: url(../assets/quienes_somos.jpeg);
 }
-
 .anima_qs:hover {
   animation: changeBgImg 9s infinite;
 }
@@ -216,12 +127,12 @@
   0% {
     background-image: url(../assets/quienes_somos.jpeg);
   }
-
   33% {
     background-image: url(../assets/quienes_somos_2.jpg);
   }
-
   66% {
     background-image: url(../assets/quienes_somos_3.jpg);
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
