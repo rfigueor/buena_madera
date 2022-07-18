@@ -1,13 +1,17 @@
 @import "https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap";
 
+$main-text-color: #250f04ff;
+$footer-text-color: azure;
+$main-font-family:"Didact Gothic", sans-serif;
+
 * {
-	font-family: "Didact Gothic", sans-serif;
+	font-family: $main-font-family;
 	margin: 0px;
 	padding: 0px;
 }
 
 .header-container {
-	color: #250f04ff;
+	color: $main-text-color;
 	width: 100%;
 	height: 150px;
 	background-image: url("../assets/head_backgrund.jpg");
@@ -48,7 +52,7 @@
 				margin: 0px 10px;
 				display: inline;
 				a {
-					color: #250f04ff;
+					color: $main-text-color;
 					text-decoration: none;
 					font-weight: bold;
 				}
@@ -91,7 +95,7 @@
 	}
 }
 .footer-container {
-	color: azure;
+	color: $footer-text-color;
 	width: 100%;
 	height: 70px;
 	background-color: #a87b52ff;
@@ -103,7 +107,7 @@
 }
 #footer-content {
 	a {
-		color: azure;
+		color: $footer-text-color;
 		text-decoration: none;
 		font-size: 9pt;
 	}
